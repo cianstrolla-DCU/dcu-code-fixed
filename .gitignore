@@ -1,0 +1,14 @@
+# Build output and IDE files (every project folder)
+**/build/
+**/.gradle/
+**/.idea/
+**/.kotlin/
+**/local.properties
+*.iml
+.DS_Store
+captures/
+.cxx/
+.externalNativeBuild/
+
+# Your Google Maps API key (see README.md) - never commit it
+secrets.properties
