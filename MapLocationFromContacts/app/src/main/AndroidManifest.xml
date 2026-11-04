@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Android 11+ package visibility: lets resolveActivity() find the Contacts app for ACTION_PICK -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PICK" />
+            <data android:mimeType="vnd.android.cursor.dir/contact" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MapLocationFromContacts"
+        android:theme="@style/MaterialTheme">
+        <activity
+            android:name="MapLocationFromContactsActivity"
+            android:exported="true"
+            android:label="MapLocationFromContacts" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
