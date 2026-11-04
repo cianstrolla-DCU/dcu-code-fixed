@@ -1,0 +1,27 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- Android 15+ draws behind a transparent status bar: use dark status bar icons on this light background -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- For the AppCompatActivity screens, which have a dark action bar behind the status bar -->
+    <style name="AppTheme.ActionBar">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+</resources>
